@@ -9,6 +9,10 @@ body {
     margin: 0;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .navbar {
     padding: 4px 4px 16px 4px;
     min-width: 20%;

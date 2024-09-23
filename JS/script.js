@@ -29,4 +29,43 @@ document.addEventListener('DOMContentLoaded', (event) => {
       console.log("All images loaded!"); 
       // ... any other code that depends on the images being loaded
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const tabs = document.querySelectorAll(".tab");
+    console.log(tabs);
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetElement = document.querySelector(`[data-category-target="${tab.dataset.category}"]`);
+
+            const grids = document.querySelectorAll(".grid");
+            grids.forEach(grid => {
+                grid.classList.add("hidden");
+            })
+
+            targetElement.classList.remove("hidden");
+        })
+    });
   });
