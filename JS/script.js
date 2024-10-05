@@ -64,8 +64,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
             grids.forEach(grid => {
                 grid.classList.add("hidden");
             })
+            tabs.forEach(singleTab => {
+              singleTab.classList.remove("active");
+          })
 
             targetElement.classList.remove("hidden");
+            tab.classList.add("active");
         })
     });
   });
