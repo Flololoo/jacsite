@@ -1,0 +1,23 @@
+.card-text-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    transition: .2s ease-in-out;
+    transform: translateY(.5rem);
+
+    a {
+        transition: .2s ease-in-out;
+        opacity: 0;
+    }
+}
+
+.card-custom:hover {
+    .card-text-content {
+        transform: translateY(-.5rem);
+    }
+    a {
+        opacity: 1;
+    }
+}
