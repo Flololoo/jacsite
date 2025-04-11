@@ -1,3 +1,25 @@
+@font-face {
+    font-family: "Gidole";
+    src: url("./Gidole/Gidole-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url("./Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+* {
+    font-family: "Gidole", sans-serif;
+}
+
 :root {
     --color-dark: #000;
 }
@@ -27,8 +49,8 @@
 }
 
 .about-section {
-    padding-top: 160px;
-    padding-bottom: 160px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .category-section {
