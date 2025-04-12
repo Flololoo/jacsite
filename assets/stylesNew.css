@@ -239,8 +239,8 @@ h1, h2, h3, h4, h5 {
     flex-direction: column;
 }
 
-.carousel-text-small {
-    font-size: 1.5rem;
+.carousel-text-large {
+    font-size: 2rem;
 }
 
 .carousel-text-small {
