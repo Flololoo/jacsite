@@ -11,8 +11,9 @@
 
 
     <!-- hero area mit header und dem slider - können wir die aktuelle Position durchstreichen um zu zeigen, dass es aktiv ist? -->
+    <!-- TODO JAC: hab Fotografie angepasst. plz check if this what you wanted -->
     <div class="position-relative hero-section">
-      <nav class="navbar navbar-expand-lg py-5">
+      <nav class="navbar navbar-expand-lg py-3 py-md-5">
         <div class="container">
           <a class="navbar-brand text-white" href="#">yourstrouly</a>
           <button class="navbar-toggler text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,9 +26,15 @@
               <li class="nav-item">
                 <a class="nav-link text-white active" aria-current="page" href="./homeNew.html">Home</a>
             </li>
-            <li class="nav-item">
-              <!--TODO FLO bitte hier sublinks einfügen Personal Branding, etc...-->
-              <a class="nav-link text-white" href="#">Fotografie</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Fotografie
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Personal Branding</a></li>
+                <li><a class="dropdown-item" href="#">Wedding</a></li>
+                <li><a class="dropdown-item" href="#">Pets</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Galerie</a>
@@ -83,32 +90,21 @@
 
     <!-- text block mit 2 Spalten --
         TODO FLO: Hier diesen Block habe ich stellenweise angepasst mit inline styles. Die styles sollen nicht für die gesamte Webseite gelten und nur für diesen Block-->
+        <!-- TODO JAC: hab angepasst. plz check if this what you wanted -->
     <div class="container about-section">
         <div class="d-flex justify-content-center align-items-center flex-column">
-            <span style="
-            font-size: 1.2rem;
-            line-height: 2;">❤ Von Herzen. Mit Kamera. ❤</span>
-            <h1 class="" style="
-            font-size: 5rem;
-            ">Yours Trouly</h1>
+            <span class="subheadline">❤ Von Herzen. Mit Kamera. ❤</span>
+            <h1>Yours Trouly</h1>
         </div>
         <hr class="my-5">
-        <div class="justify-content-center row">
+        <div class="justify-content-center row gx-5">
             <div class="col-12 col-md-5">
-                <p style="
-                margin-right: 20px;
-                margin-left: 20px;
-                font-size: 2rem;
-                ">
+                <p class="about-section__large">
                 Fotografie, die dich sichtbar macht, dich erkennt – und dich in Bildern neu entdeckt.</p>
             </div>
             <div class="col-12 col-md-5">
                 <!--p>Lass uns gemeinsam Bilder kreieren, die genau zu dir passen – sei es die Begleitung eines Events, das Festhalten besonderer Momente oder ein Porträt, das deine Persönlichkeit authentisch widerspiegelt.</p-->
-                <p style="
-                font-size: 1.5rem;
-                line-height: 1.7;
-                font-weight: lighter;
-                margin-left: 20px;">
+                <p class="about-section__small">
                 Fotos, die zum Suchen und Finden einladen.
                   Fotos, die ohne Worte sprechen.
                   Fotos, die alles erzählen ohne zu sprechen.
@@ -119,9 +115,7 @@
                   
                   Fotos, die dein Innerstes berühren. Und meines widerspiegeln.
                 </p>
-                <a href="#" class="btn btn-primary btn-lg" style="
-                margin-left: 20px;
-                margin-top: 10px;">Zur Gallerie</a>
+                <a href="#" class="btn btn-primary btn-lg mt-2">Zur Gallerie</a>
             </div>
         </div>
     </div>
